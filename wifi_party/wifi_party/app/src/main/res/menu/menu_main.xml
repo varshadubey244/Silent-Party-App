@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.maxdota.wifiparty.MainActivity">
+    <item
+        android:id="@+id/action_leave_party"
+        android:orderInCategory="100"
+        android:title="Leave Party"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_indicator"
+        android:icon="@drawable/ic_standing"
+        android:title="@string/indicator"
+        app:showAsAction="ifRoom" />
+</menu>

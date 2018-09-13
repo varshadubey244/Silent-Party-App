@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/small_distance"
+            android:text="Add Song" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_distance"
+            android:layout_marginRight="@dimen/small_distance">
+
+            <TextView
+                android:id="@+id/current_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="0:00" />
+
+            <TextView
+                android:id="@+id/duration_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:text="0:00" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/control_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:padding="@dimen/small_distance"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/play_control"
+                style="@style/SelectableItemBackgroundLight"
+                android:layout_width="@dimen/control_button_size"
+                android:layout_height="@dimen/control_button_size"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/tiny_distance"
+                android:layout_marginRight="@dimen/tiny_distance"
+                android:padding="@dimen/control_button_padding"
+                android:src="@drawable/apollo_holo_dark_play" />
+
+            <ImageView
+                android:id="@+id/prev_control"
+                style="@style/SelectableItemBackgroundLight"
+                android:layout_width="@dimen/control_button_size"
+                android:layout_height="@dimen/control_button_size"
+                android:layout_toLeftOf="@id/play_control"
+                android:padding="@dimen/control_button_padding"
+                android:src="@drawable/apollo_holo_dark_prev" />
+
+            <ImageView
+                android:id="@+id/next_control"
+                style="@style/SelectableItemBackgroundLight"
+                android:layout_width="@dimen/control_button_size"
+                android:layout_height="@dimen/control_button_size"
+                android:layout_toRightOf="@id/play_control"
+                android:padding="@dimen/control_button_padding"
+                android:src="@drawable/apollo_holo_dark_next" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_container" />
+</RelativeLayout>

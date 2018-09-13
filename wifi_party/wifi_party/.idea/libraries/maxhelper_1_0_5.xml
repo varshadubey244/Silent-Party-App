@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="maxhelper-1.0.5">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.maxdota.maxhelper/maxhelper/1.0.5/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.maxdota.maxhelper/maxhelper/1.0.5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.maxdota.maxhelper/maxhelper/1.0.5/eef0ab0d5a7997a0c761b583e7b3e5a7ac0eabdd/maxhelper-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
